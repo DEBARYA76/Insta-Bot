@@ -1,5 +1,9 @@
 from instapy import InstaPy
 import json
+import input_cred
+
+input_cred.cred_input("credentials.json")
+
 
 #loading credentials
 with open('credentials.json') as c:
