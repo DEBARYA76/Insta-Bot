@@ -3,7 +3,7 @@
 
 ## Requirements
 1. Instapy
-2. Mozilla Firefox Browser
+2. Mozilla Firefox Browser with geckodriver for headless mode
 3. Python 3.7+
 
 ## Installation

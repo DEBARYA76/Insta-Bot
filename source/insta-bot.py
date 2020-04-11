@@ -15,8 +15,8 @@ session.login()
 
 #session tasks
 session.set_quota_supervisor(enabled=True, sleep_after=["likes", "comments_d", "follows", "unfollows", "server_calls_h"], sleepyhead=True, stochastic_flow=True, notify_me=True,
-                              peak_likes_hourly=5,
-                              peak_likes_daily=60,
+                              peak_likes_hourly=15,
+                              peak_likes_daily=100,
                                peak_comments_hourly=9,
                                peak_comments_daily=36,
                                 peak_follows_hourly=1,
@@ -28,7 +28,7 @@ session.set_quota_supervisor(enabled=True, sleep_after=["likes", "comments_d", "
 session.set_smart_hashtags(['poetry', 'writing', 'writers'], limit=3, sort='top', log_tags=True)
 session.like_by_tags(["writers", "writersofinstagram", "poetry", "writer", "writerscommunity", "writing", "writersofig", "poets", "authors", "wordporn"], amount=5, use_smart_hashtags=True)
 session.set_do_comment(True, percentage=60)
-session.dont_include(['sen.ankit11', 'sohaa.struck', 'sooumili.xo', 'booksandstarrynights'])
+session.dont_include(['user1', 'user2', 'user3', 'user3'])
 session.set_dont_unfollow_active_users(enabled=True, posts=3)
 session.set_skip_users(skip_private=True,
                        skip_no_profile_pic=True,
